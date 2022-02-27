@@ -5,7 +5,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
-  outputDir: '../wechat1111111/web/ai/public/articlesync',
+  outputDir: '../wechat/web/ai/public/articlesync',
   publicPath: process.env.BASE_URL,
   productionSourceMap: false,
   devServer: {
