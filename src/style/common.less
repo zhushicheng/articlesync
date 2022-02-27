@@ -1,0 +1,20 @@
+*{ margin:0; padding:0;}
+html,body,form,fieldset,textarea { height:100%; border:0; font-size:10pt; background:linear-gradient(rgb(90,90,90),#222);background:-webkit-linear-gradient(rgb(90,90,90),#222);background:-o-linear-gradient(rgb(90,90,90),#222);background:-moz-linear-gradient(rgb(90,90,90),#222); }
+form { overflow:hidden; }
+legend { line-height:3em; font-weight:bolder;color:#fff;text-align:center;}
+button { cursor:pointer; }
+textarea { width:100%; height:20em; border:1px solid #ccc; display:block; background:#ddd; }
+a{text-decoration: none;color: #409EFF;}
+.el-table{
+  .el-table__cell{
+    padding: 8px 0;
+  }
+}
+.el-pagination{
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  /deep/ .el-pagination__sizes{
+    order: 1;
+  }
+}

@@ -1,0 +1,600 @@
+
+.material-operation-tools .set-image-border li #set-image-border-radius-unit { position: absolute; top: 5px; right: 0px; width: 60px; border: 0px; }
+.material-operation-tools .set-image-shadow li #set-image-border-radius-unit { position: absolute; top: 5px; right: 0px; width: 60px; border: 0px; }
+
+.material-operation-tools a{font-size:14px}
+.material-operation-tools {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	z-index:1001
+}
+.material-operation-tools .tools-bar {
+	display:inline-block;
+	width:auto;
+	height:30px;
+	line-height:30px;
+	padding:0 5px;
+	background-color:rgba(0,27,42,0.8);
+	border-radius:5px;
+
+	white-space:nowrap;
+	margin-bottom:2px
+}
+.material-operation-tools li.operation-item,.material-operation-tools li.operation-split {
+	display:inline-block;
+	vertical-align:top;
+	list-style:none;
+	position:relative
+}
+.material-operation-tools .bubbleTips {
+	position:absolute;
+	background:rgba(0,0,0,0.8);
+	border-radius:4px;
+	top:-50px;
+	color:#fff
+}
+.material-operation-tools .bubbleTips em {
+	display:inline-block;
+	font-style:normal;
+	padding:0 5px
+}
+.material-operation-tools .bubbleTips i {
+	top:35px;
+	position:absolute;
+	color:rgba(0,0,0,0.8)
+}
+.material-operation-tools a {
+	display:inline-block;
+	height:20px;
+	line-height:18px;
+	padding:0 2px;
+	color:#fff;
+	font-size:10px;
+	border-radius:4px;
+	margin-top:7px;
+	-webkit-transition:background,0.3s,ease;
+	transition:background,0.3s,ease
+}
+.material-operation-tools a:hover {
+	background:rgba(255,69,0,0.96);
+	color:#fff
+}
+.material-operation-tools a i {
+	font-size:10px;
+	vertical-align:middle
+}
+.material-operation-tools .choose-insert-row {
+	display:none;
+	position:absolute;
+	top:30px;
+	width:100px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .choose-insert-row li {
+	height:30px;
+	line-height:30px;
+	list-style:none;
+	text-align:left;
+	padding:0 5px;
+	color:#fff;
+	border-bottom:1px #666 solid;
+	font-size:14px;
+	cursor:pointer;
+	border-radius:4px;
+	-webkit-transition:background,0.3s,ease;
+	transition:background,0.3s,ease
+}
+.material-operation-tools .choose-insert-row li:hover {
+	background:rgba(255,69,0,0.96)
+}
+.material-operation-tools li.operation-split {
+	display:inline-block;
+	width:1px;
+	height:20px;
+	background:rgba(170,170,170,0.8);
+	margin:5px 5px 0 5px
+}
+.material-operation-tools .colorPicker-alone {
+	float:left;
+	height:15px;
+	width:15px;
+	overflow:hidden;
+	
+	cursor:pointer;
+	background:#13ce66
+}
+.material-operation-tools .set-all-color {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-130px;
+	width:312px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .set-style {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-50px;
+	width:320px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .set-style li {
+	position:relative;
+	list-style:none;
+	height:40px;
+	line-height:40px
+}
+.material-operation-tools .set-style li .prop-name {
+	float:left;
+	display:inline-block;
+	padding:0 5px;
+	width:80px;
+	color:#fff;
+	font-size:14px
+}
+.material-operation-tools .set-style li .prop-name i {
+	font-size:14px;
+	margin-right:5px
+}
+.material-operation-tools .set-style li .fill-item {
+	float:left;
+	position:relative;
+	width:140px
+}
+.material-operation-tools .set-style li .fill-item input {
+	display:none
+}
+.material-operation-tools .set-style li input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	float:right;
+	border-radius:4px;
+	outline:0;
+	color:#fff
+}
+.material-operation-tools .set-style li .company {
+	font-style:normal;
+	position:absolute;
+	top:0;
+	right:38px;
+	color:#aaa
+}
+.material-operation-tools .set-font-line-height {
+	display:none;
+	position:absolute;
+	top:30px;
+	width:300px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .set-font-line-height li {
+	list-style:none
+}
+.material-operation-tools .set-font-line-height input#setLineHeight {
+	padding-left:5px;
+	width:90%;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:left
+}
+.material-operation-tools .set-font-line-height .company {
+	font-style:normal;
+	position:absolute;
+	top:5px;
+	right:22px;
+	color:#aaa
+}
+.material-operation-tools .set-font-size-item .set-font-size {
+	display:none;
+	position:absolute;
+	top:30px;
+	width:50px;
+	max-height:120px;
+	overflow-y:auto;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3)
+}
+.material-operation-tools .set-font-size-item .set-font-size li {
+	height:30px;
+	line-height:30px;
+	list-style:none;
+	text-align:left;
+	padding:0 5px;
+	color:#fff;
+	border-bottom:1px #666 solid;
+	font-size:16px;
+	cursor:pointer;
+	border-radius:4px;
+	-webkit-transition:background,0.3s,ease;
+	transition:background,0.3s,ease
+}
+.material-operation-tools .set-font-size-item .set-font-size li:hover {
+	background:rgba(255,69,0,0.96)
+}
+.material-operation-tools .set-font-size-item input {
+	width:38px;
+	height:20px;
+	line-height:20px;
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:center
+}
+.material-operation-tools .colorPicker-alone-font-color {
+	float:left;
+	margin:10px 3px 0 3px;
+	height:13px;
+	width:13px;
+	overflow:hidden;
+	
+	border:2px #fff solid;
+	cursor:pointer;
+	background:#f0f0f0
+}
+.material-operation-tools .colorPicker-alone-font-bg-color {
+	float:left;
+	margin:10px 3px 0 3px;
+	height:13px;
+	width:13px;
+	overflow:hidden;
+	
+	border:2px #fff solid;
+	cursor:pointer;
+	background:#f0f0f0
+}
+.material-operation-tools .colorPicker-alone-image-border-color {
+	float:left;
+	margin:5px 5px 0 5px;
+	height:25px;
+	width:25px;
+	overflow:hidden;
+	border-radius:50%;
+	border:2px #fff solid;
+	cursor:pointer;
+	background:#f0f0f0
+}
+.material-operation-tools .input-val-small {
+	width:48px;
+	height:25px;
+	margin:5px 5px 0 0
+}
+.material-operation-tools .input-val-big {
+	width:190px;
+	height:25px;
+	margin:5px 5px 0 0
+}
+.material-operation-tools .senior-image-tools {
+	color:#fff
+}
+.material-operation-tools .senior-image-tools input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:right
+}
+.material-operation-tools .senior-inimage-tools {
+	color:#fff
+}
+.material-operation-tools .senior-inimage-tools input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:right
+}
+.material-operation-tools .set-image-border {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-50px;
+	width:220px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .set-image-border li {
+	position:relative;
+	list-style:none;
+	height:40px;
+	line-height:40px;
+	margin-bottom:10px
+}
+.material-operation-tools .set-image-border li .prop-name {
+	float:left;
+	display:inline-block;
+	padding:0 5px;
+	width:50px;
+	color:#fff;
+	font-size:14px
+}
+.material-operation-tools .set-image-border li .prop-name i {
+	font-size:14px;
+	margin-right:5px
+}
+.material-operation-tools .set-image-border li .fill-item {
+	float:left;
+	position:relative;
+	width:160px
+}
+.material-operation-tools .set-image-border li .fill-item input {
+	width:95%
+}
+.material-operation-tools .set-image-border li select {
+	width:100%;
+	height:30px;
+	padding:0 12px;
+	background-color:transparent;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	outline:0;
+	position:relative;
+	z-index:99
+}
+.material-operation-tools .set-image-border li select option {
+	color:#333
+}
+.material-operation-tools .set-image-border li input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:left;
+	position:relative;
+	z-index:99
+}
+.material-operation-tools .set-image-border li #set-image-border-radius-unit {
+	position:absolute;
+	top:5px;
+	right:0;
+	width:60px;
+	border:0
+}
+.material-operation-tools .set-image-shadow {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-50px;
+	width:220px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+.material-operation-tools .set-image-shadow li {
+	position:relative;
+	list-style:none;
+	height:40px;
+	line-height:40px;
+	margin-bottom:10px
+}
+.material-operation-tools .set-image-shadow li .prop-name {
+	float:left;
+	display:inline-block;
+	padding:0 5px;
+	width:50px;
+	color:#fff;
+	font-size:14px
+}
+.material-operation-tools .set-image-shadow li .prop-name i {
+	font-size:14px;
+	margin-right:5px
+}
+.material-operation-tools .set-image-shadow li .fill-item {
+	float:left;
+	position:relative;
+	width:160px
+}
+.material-operation-tools .set-image-shadow li .fill-item .bubble-slider {
+	display:none
+}
+.material-operation-tools .set-image-shadow li .fill-item input {
+	width:95%
+}
+.material-operation-tools .set-image-shadow li select {
+	width:100%;
+	height:30px;
+	padding:0 12px;
+	background-color:transparent;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	outline:0
+}
+.material-operation-tools .set-image-shadow li input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff;
+	text-align:left
+}
+.material-operation-tools .set-image-shadow li .company {
+	font-style:normal;
+	position:absolute;
+	top:0;
+	right:22px;
+	color:#aaa
+}
+.material-operation-tools .set-image-shadow li #set-image-border-radius-unit {
+	position:absolute;
+	top:5px;
+	right:0;
+	width:60px;
+	border:0
+}
+.set-jianjv {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-50px;
+	width:200px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999;
+	color:#fff
+}
+.material-operation-tools .set-jianjv li input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	border-radius:4px;
+	outline:0;
+	color:#fff
+}
+.material-operation-tools .colorPicker-alone-image-shadow-color {
+	float:left;
+	margin:5px 5px 0 0;
+	height:25px;
+	width:25px;
+	overflow:hidden;
+	border-radius:50%;
+	border:2px #fff solid;
+	cursor:pointer;
+	background:#595959
+}
+.material-operation-tools .set-style,.material-operation-tools .set-imgwidth {
+	display:none;
+	position:absolute;
+	top:30px;
+	right:-50px;
+	width:320px;
+	background-color:rgba(76,99,123,0.95);
+	border-radius:4px;
+	padding:5px 10px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4),2px 3px 6px rgba(0,0,0,0.3);
+	z-index:999
+}
+
+.material-operation-tools .set-style li,.material-operation-tools .set-imgwidth li {
+	position:relative;
+	list-style:none;
+	height:40px;
+	line-height:40px
+}
+.material-operation-tools .set-style li .prop-name,.material-operation-tools .set-imgwidth li .prop-name {
+	float:left;
+	display:inline-block;
+	padding:0 5px;
+	width:80px;
+	color:#fff;
+	font-size:14px
+}
+.material-operation-tools .set-style li .prop-name i,.material-operation-tools .set-imgwidth li .prop-name i {
+	font-size:14px;
+	margin-right:5px
+}
+.material-operation-tools .set-style li .fill-item,.material-operation-tools .set-imgwidth li .fill-item {
+	float:left;
+	position:relative;
+	width:150px
+}
+.material-operation-tools .set-style li .fill-item input,.material-operation-tools .set-imgwidth li .fill-item input {
+	display:none
+}
+.material-operation-tools .set-style li input,.material-operation-tools .set-imgwidth li input {
+	padding-left:5px;
+	background:transparent;
+	border:1px #ccc solid;
+	float:right;
+	border-radius:4px;
+	outline:none;
+	color:#fff
+}
+.material-operation-tools .set-style li .company,.material-operation-tools .set-imgwidth li .company {
+	font-style:normal;
+	position:absolute;
+	top:0;
+	right:20px;
+	color:#aaa
+}
+.material-operation-tools .styColorPicker {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border: 0 none;
+    margin-right: 3px;
+    cursor: crosshair;
+    border-radius: 100%;
+    color: transparent!important
+}
+
+.material-operation-tools .styColorPicker.active {
+    box-shadow: 0 0 0 2px #fff
+}
+.cp-app, .cp-app div{
+z-index:999;
+}
+.diydel{position: absolute;z-index: 1; line-height: 25px; padding: 0 0; top: 0px; right:5px; display: block; text-decoration: none; background:url(../images/del.png) no-repeat 0 0;} .diydel:hover{background:url(../images/delh.png) no-repeat 0 0;}
+#style_search_list ul > li {border-bottom:1px solid #DDD;padding: 10px 15px;cursor: pointer;}
+#style_search_list ul > li:hover { background: rgb(240, 240, 244); }
+.material-operation-tools .colorPicker-aloneb {
+	float:left;
+	margin:10px 3px 0 3px;
+	height:13px;
+	width:13px;
+	overflow:hidden;
+
+	border:1px #fff solid;
+	cursor:pointer;
+	background:#ffffff
+}
